@@ -13,9 +13,9 @@ for month in range(months):
     if deficit > 0:
         money_capital = money_capital + deficit
 
-    spend *= (1 + increase)
+    spend *= 1 + increase
 
 # Округляем до целого числа
-money_capital = round(money_capital)
+money_capital = math.ceil(money_capital)
 
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов: {money_capital}")
