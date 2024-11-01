@@ -10,8 +10,8 @@ while True:
 
     if budget >= spend:
         months += 1
-        money_capital -= (spend - salary)
-        spend *= (1 + increase)
+        money_capital -= spend - salary
+        spend *= 1 + increase
     else:
         break
 
